@@ -1,5 +1,5 @@
 # Overview
-This project is a VBA based PowerPoint tool to help in counting and displaying available personnel and other assets in a military unit. Its primary purpose is to aid the duty officer to keep track of personnel and weapons moving in and out of a unit by automating the manual counting process via an intuitive, quick to use user interface. The secondary purpose is to display this information in a PowerPoint slide, which can be formatted to look like a "reception info display" to provide an at-glance situation report of the unit's current status. See "use case example" for a better illustration of this idea.
+This project is a VBA based PowerPoint tool to help in counting and displaying available personnel and other assets in a military unit. Its primary purpose is to aid the duty officer to keep track of assets moving in and out of a unit by automating the manual counting process via an intuitive, quick to use user interface. The secondary purpose is to display this information in a PowerPoint slide, which can be formatted to look like a "reception info display" to provide an at-glance situation report of the unit's current status. See "use case example" for a better illustration of this idea.
 
 ## Use case example
 
@@ -47,11 +47,30 @@ _After clicking the "Vähennä Vahvuudesta"-button, the same subtraction process
 _"Yup, everything looks good!"_
 
 
-  
 
+## How to use this in your own project
+If you do not fancy copying and editing the "Vahvuus Laskuri - Example Use Case.pptm", you can set up your project manually with these steps.
 
-## How to use
-TBD
+1. Your PowerPoint-presentation must have **Macros** and **Active-X** enabled
+2. The following controls should present at "Slide1" (check that the slide is indeed "Slide1" from the VBA SDK):
+   - Button named "MuokkaaVahvuuksiaButton"
+   - Labels named:
+     - UpseeritPaikallaLabel
+     - AliupseeritPaikallaLabel
+     - MiehistöPaikallaLabel
+     - YhteensäPaikallaLabel
+     - UpseeritRivivahvuusLabel
+     - AliupseeritRivivahvuusLabel
+     - MiehistöRivivahvuusLabel
+     - YhteensäRivivahvuusLabel
+     - UpseeritKirjavahvuusLabel
+     - AliupseeritKirjavahvuusLabel
+     - MiehistöKirjavahvuusLabel
+     - YhteensäKirjavahvuusLabel
+     - AseetPaikallaLabel
+     - AseetKirjavahvuusLabel
+3. Download and import the source code files to your VBA project
+4. You are now all set! Mess around with the controls' styles and position to meet your project's requirements.
 
 ## Legal Disclaimer
 This software comes with absolutely no warranty and should be used at the user's own risk. I take no credit for a possible loss of data or angered officers due to malfunction or mishandling of the software.
